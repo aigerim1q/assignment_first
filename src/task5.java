@@ -1,21 +1,19 @@
 import java.util.Scanner;
-
+/**
+ * @brief finding factorial
+ * @param n number
+ * @param  fib return n_th number in Fibanacci sequence
+ */
 public class task5{
-    /**
-     * @brief finding power of the number
-     * @param n number
-     * @param  power return power of the number
-     */
-
-    public static int power(int a ,int n) {
+    public static int fib(int n) {
         if (n==1) {
-            return a ;
+            return 1 ;
         } else if (n==0) {
-            return 1;
+            return 0;
 
         }
 
-        int f=a*power(a,n-1);
+        int f=fib(n-1)+fib(n-2);
 
         return f;
     }
@@ -24,10 +22,9 @@ public class task5{
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
         int n = sc.nextInt();
-        int powerofnum=power(a,n);
-        System.out.println(powerofnum);
+        int fibnumber=fib(n);
+        System.out.println(fibnumber);
     }
 
 
