@@ -1,8 +1,8 @@
 import java.util.Scanner;
 /**
  * @brief checking prime or not
- * @param n size of array
- * @param printprime check whether the n is prime and print
+ * @param n is number which we checl
+ * @param printprime  check whether n is prime
  */
 public class task3 {
     public static void printprime(int n) {
