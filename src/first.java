@@ -1,5 +1,12 @@
 import java.util.Scanner;
 
+/**
+ * @brief finding  the minimum number in the array
+ * @param n size of array
+ * @param arr array
+ * @param printmin finds the min number
+ */
+
 public class first {
     public static void printmin(int arr[],int n) {
         int minN=arr[0];
