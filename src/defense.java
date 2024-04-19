@@ -6,9 +6,11 @@ public class defense{
         if (n==1){
             return 1;
         }
-        if (arr[n]==number) {
-            return counnt+ count(n-1,arr,number);
+        if (arr[n-1]==number) {
+            counnt=1;
         }
+
+        return counnt+ count(n-1,arr,number);
 
     }
 
